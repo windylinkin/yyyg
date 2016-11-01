@@ -1,4 +1,7 @@
 #yyyg
+
+http://yyg.linweikun.com  后台账号 admin 密码yyg123456
 网上一堆都是php java的也是旧的struct2 终于有mybatis spring的
 
-欢迎加我微信咨询
+欢迎加我微信linweikun8023咨询
+
