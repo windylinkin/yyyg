@@ -1,0 +1,1014 @@
+<html>
+                 <head>
+                   <meta charset="UTF-8">
+                   <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1">
+                   <style id="style">
+@font-face {
+  font-family: 'Lato';
+  src: url('file://C:\Users\Administrator\AppData\Local\boost\app-0.11.3\resources\app/resources/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+       url('file://C:\Users\Administrator\AppData\Local\boost\app-0.11.3\resources\app/resources/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+       url('file://C:\Users\Administrator\AppData\Local\boost\app-0.11.3\resources\app/resources/fonts/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('file://C:\Users\Administrator\AppData\Local\boost\app-0.11.3\resources\app/resources/fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+       url('file://C:\Users\Administrator\AppData\Local\boost\app-0.11.3\resources\app/resources/fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
+       url('file://C:\Users\Administrator\AppData\Local\boost\app-0.11.3\resources\app/resources/fonts/Lato-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  font-size: 16px;
+  padding: 15px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+body .katex {
+  font: 400 1.2em 'KaTeX_Main';
+  line-height: 1.2em;
+  white-space: initial;
+  text-indent: 0;
+}
+body .katex .mfrac>.vlist>span:nth-child(2) {
+  top: 0 !important;
+}
+body .katex-error {
+  background-color: #f2dede;
+  color: #a64444;
+  padding: 5px;
+  margin: -5px;
+  border-radius: 5px;
+}
+body .flowchart-error,
+body .sequence-error {
+  background-color: #f2dede;
+  color: #a64444;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-pack: left;
+  -moz-box-pack: left;
+  -o-box-pack: left;
+  -ms-flex-pack: left;
+  -webkit-justify-content: left;
+  justify-content: left;
+}
+li label.taskListItem {
+  margin-left: -1.8em;
+}
+li label.taskListItem.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+div.math-rendered {
+  text-align: center;
+}
+.math-failed {
+  background-color: rgba(255,0,0,0.1);
+  color: #d90000;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+sup {
+  position: relative;
+  top: -0.4em;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+sub {
+  position: relative;
+  bottom: -0.4em;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+a {
+  color: #2bac8f;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: -5px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+}
+a img {
+  vertical-align: sub;
+}
+a:hover {
+  color: #2eb899;
+  text-decoration: underline;
+  background-color: rgba(255,201,92,0.3);
+}
+a:visited {
+  color: #2bac8f;
+}
+hr {
+  border-top: none;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 15px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  word-wrap: break-word;
+}
+h1 {
+  font-size: 2.55em;
+  padding-bottom: 0.3em;
+  line-height: 1.2em;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 1em 0 0.44em;
+}
+h1:first-child {
+  margin-top: 0;
+}
+h2 {
+  font-size: 1.75em;
+  padding-bottom: 0.3em;
+  line-height: 1.225em;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 1em 0 0.57em;
+}
+h2:first-child {
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43em;
+  margin: 1em 0 0.66em;
+}
+h4 {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin: 1em 0 0.8em;
+}
+h5 {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 1em 0 1em;
+}
+h6 {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 1em 0 1em;
+  color: #777;
+}
+p {
+  line-height: 1.6em;
+  margin: 0 0 1em;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+img {
+  max-width: 100%;
+}
+strong,
+b {
+  font-weight: bold;
+}
+em,
+i {
+  font-style: italic;
+}
+s,
+del,
+strike {
+  text-decoration: line-through;
+}
+u {
+  text-decoration: underline;
+}
+blockquote {
+  border-left: solid 4px #3fb399;
+  margin: 0 0 1em;
+  padding: 0 25px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+ul li {
+  display: list-item;
+}
+ul li.taskListItem {
+  list-style: none;
+}
+ul li p {
+  margin: 0;
+}
+ul>li>ul,
+ul>li>ol {
+  margin: 0;
+}
+ul>li>ul {
+  list-style-type: circle;
+}
+ul>li>ul>li>ul {
+  list-style-type: square;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+ol li {
+  display: list-item;
+}
+ol li p {
+  margin: 0;
+}
+ol>li>ul,
+ol>li>ol {
+  margin: 0;
+}
+code {
+  color: #cc305f;
+  padding: 0.2em 0.4em;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  font-size: 1em;
+  text-decoration: none;
+  margin-right: 2px;
+}
+pre {
+  padding: 0.5em !important;
+  border: solid 1px #d1d1d1;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 0 0 1em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  line-height: 1.4em;
+}
+pre.flowchart,
+pre.sequence {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #fff;
+}
+pre.CodeMirror {
+  height: initial;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+pre.CodeMirror>code {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-x: auto;
+}
+pre code {
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+pre>span.filename {
+  width: 100%;
+  border-radius: 5px 0px 0px 0px;
+  margin: -8px 100% 8px -8px;
+  padding: 0px 6px;
+  background-color: #777;
+  color: #fff;
+}
+pre>span.lineNumber {
+  display: none;
+  font-size: 1em;
+  padding: 0.5em 0;
+  margin: -0.5em 0.5em -0.5em -0.5em;
+  border-right: 1px solid;
+  text-align: right;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+pre>span.lineNumber.CodeMirror-gutters {
+  position: initial;
+  top: initial;
+  left: initial;
+  min-height: 0 !important;
+}
+pre>span.lineNumber>span {
+  display: block;
+  padding: 0 0.5em 0;
+}
+table {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em;
+}
+table thead tr {
+  background-color: #fff;
+}
+table thead th {
+  border-style: solid;
+  padding: 6px 13px;
+  line-height: 1.6;
+  border-width: 1px 0 2px 1px;
+  border-color: #d0d0d0;
+  font-weight: bold;
+}
+table thead th:last-child {
+  border-right: solid 1px #d0d0d0;
+}
+table tbody tr:nth-child(2n + 1) {
+  background-color: #f9f9f9;
+}
+table tbody tr:nth-child(2n) {
+  background-color: #fff;
+}
+table tbody td {
+  border-style: solid;
+  padding: 6px 13px;
+  line-height: 1.6;
+  border-width: 0 0 1px 1px;
+  border-color: #d0d0d0;
+}
+table tbody td:last-child {
+  border-right: solid 1px #d0d0d0;
+}
+kbd {
+  background-color: #fafbfc;
+  border: solid 1px #d0d0d0;
+  border-bottom-color: #888;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 #959da5;
+  box-shadow: inset 0 -1px 0 #959da5;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1;
+  padding: 3px 5px;
+}
+body[data-theme="dark"] {
+  color: #f9f9f9;
+  border-color: #444b59;
+  background-color: #2c3033;
+}
+body[data-theme="dark"] a:hover {
+  background-color: rgba(90,214,186,0.2) !important;
+}
+body[data-theme="dark"] code {
+  color: #ea6730;
+  border-color: #3d4450;
+  background-color: #363a3e;
+}
+body[data-theme="dark"] pre {
+  border-color: #474f5c;
+}
+body[data-theme="dark"] pre code {
+  background-color: transparent;
+}
+body[data-theme="dark"] label.taskListItem {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] table thead tr {
+  background-color: #282b2e;
+}
+body[data-theme="dark"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="dark"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dark"] table tbody tr:nth-child(2n + 1) {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] table tbody tr:nth-child(2n) {
+  background-color: #282b2e;
+}
+body[data-theme="dark"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="dark"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dark"] kbd {
+  background-color: #444b59;
+  color: #f9f9f9;
+}
+body[data-theme="solarized-dark"] {
+  color: #93a1a1;
+  border-color: #444b59;
+  background-color: #073642;
+}
+body[data-theme="solarized-dark"] table thead tr {
+  background-color: #06313b;
+}
+body[data-theme="solarized-dark"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="solarized-dark"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="solarized-dark"] table tbody tr:nth-child(2n + 1) {
+  background-color: #073642;
+}
+body[data-theme="solarized-dark"] table tbody tr:nth-child(2n) {
+  background-color: #06313b;
+}
+body[data-theme="solarized-dark"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="solarized-dark"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+/*# sourceMappingURL=browser/components/markdown.css.map */
+body {
+  font-family: 'Segoe UI','meiryo','Microsoft YaHei','helvetica','arial','sans-serif';
+  font-size: 14px;
+  padding-bottom: 90vh;
+}
+code {
+  font-family: 'Segoe UI','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro','monospace';
+  background-color: rgba(0,0,0,0.04);
+}
+.lineNumber {
+  display: block !important;
+  font-family: 'Segoe UI','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro','monospace';
+}
+
+.clipboardButton {
+  color: rgba(147,147,149,0.8);;
+  fill: rgba(147,147,149,1);;
+  border-radius: 50%;
+  margin: 0px 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.clipboardButton:hover {
+  transition: 0.2s;
+  color: #939395;
+  fill: #939395;
+  background-color: rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  border: none;
+}
+
+h1 {
+  padding-bottom: 4px;
+  margin: 1em 0 8px;
+}
+
+h2 {
+  padding-bottom: 0.2em;
+  margin: 1em 0 0.37em;
+}
+
+body p {
+  white-space: normal;
+}
+</style>
+                   <link rel="stylesheet" href="css/dracula.css"><link rel="stylesheet" href="css/katex.min.css"><link rel="stylesheet" href="css/codemirror.css">
+                 </head>
+                 <body><h1 data-line="0" id="java">java</h1>
+<h2 data-line="1" id="1%E3%80%81hashcode%E7%9B%B8%E7%AD%89%E4%B8%A4%E4%B8%AA%E7%B1%BB%E4%B8%80%E5%AE%9A%E7%9B%B8%E7%AD%89%E5%90%97equals%E5%91%A2%E7%9B%B8%E5%8F%8D%E5%91%A2">1、hashcode相等两个类一定相等吗?equals呢?相反呢?</h2>
+<ul>
+<li>
+<p data-line="2">1.两个对象值相同(x.equals(y) == true)，则一定有相同的hashcode</p>
+</li>
+<li>
+<p data-line="3">2.java语言的定义： Hash，一般翻译做“散列”，也有直接音译为&quot;哈希&quot;的，就是把任意长度的输入（又叫做预映射， pre-image），通过散列算法，变换成固定长度的输出，该输出就是散列值。这种转换是一种压缩映射，也就是，散列值的空间通常远小于输入的空间，不同的输入可能会散列成相同的输出，而不可能从散列值来唯一的确定输入值，所以：<br />
+1）对象相等，则hashCode一定相等；<br />
+2）hashCode相等，对象未必相等。<br />
+3.“==” 是比较地址是否相等，JAVA中声明变量都是引用嘛，不同的引用，可能指向同一个地址；<br />
+4.equals 是比较值是否相等。</p>
+<p data-line="9">引申：hashcode、equals和“==”三者的关系？<br />
+1.如果是基本变量，没有hashcode和equals方法，基本变量的比较方式就只有==；<br />
+2.如果是变量，由于在java中所有变量定义都是一个指向实际存储的一个句柄（你可以理解为c++中的指针），在这里==是比较句柄的地址（你可以理解为指针的存储地址），而不是句柄指向的实际内存中的内容，如果要比较实际内存中的内容，那就要用equals方法，但是，如果是你自己定义的一个类，比较自定义类用equals和==是一样的，都是比较句柄地址，因为自定义的类是继承于object，而object中的equals就是用==来实现的，见源码：<br />
+public boolean equals(Object obj) {<br />
+return (this == obj);<br />
+}</p>
+</li>
+<li>
+<p data-line="16">3.那为什么我们用的String等类型equals是比较实际内容呢，是因为String等常用类已经重写了object中的equals方法，让equals来比较实际内容，查看源码如下：<br />
+public boolean equals(Object anObject) {<br />
+if (this == anObject) {<br />
+return true;<br />
+}<br />
+if (anObject instanceof String) {<br />
+String anotherString = (String)anObject;<br />
+int n = value.length;<br />
+if (n == anotherString.value.length) {<br />
+char v1[] = value;<br />
+char v2[] = anotherString.value;<br />
+int i = 0;<br />
+while (n-- != 0) {<br />
+if (v1[i] != v2[i])<br />
+return false;<br />
+i++;<br />
+}<br />
+return true;<br />
+}<br />
+}<br />
+return false;<br />
+}</p>
+</li>
+<li>
+<p data-line="38">4.hashcode，在一般的应用中你不需要了解hashcode的用法，但当你用到hashmap，hashset等集合类时要注意下hashcode。你想通过一个object的key来拿hashmap的value，hashmap的工作方法是，通过你传入的object的hashcode在内存中找地址，当找到这个地址后再通过equals方法来比较这个地址中的内容是否和你原来放进去的一样，一样就取出value。</p>
+</li>
+</ul>
+<h2 data-line="41" id="2%E3%80%81%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6">2、介绍一下集合框架?</h2>
+<ul>
+<li>
+<p data-line="43">1.为什么Map接口不继承Collection 接口？<br />
+Set是无序集合，并且不允许重复的元素<br />
+List是有序的集合，并且允许重复的元素<br />
+而Map是键值对<br />
+它被视为是键的set和值的set的组合<br />
+Map被设计为键值对的集合，所以不需要继承Collection 接口</p>
+</li>
+<li>
+<p data-line="50">2.HashMap和Hashtable之间的区别？<br />
+同步或线程安全<br />
+Null键和Null值<br />
+迭代值<br />
+默认容量大小</p>
+</li>
+<li>
+<p data-line="56">3.comparable 和 comparator的不同之处？<br />
+comparable接口实际上是出自java.lang包<br />
+它有一个 compareTo(Object obj)方法来将objects排序<br />
+comparator接口实际上是出自 java.util 包<br />
+它有一个compare(Object obj1, Object obj2)方法来将objects排序</p>
+</li>
+<li>
+<p data-line="62">4.如何对Object的list排序？<br />
+对objects数组进行排序，我们可以用Arrays.sort()方法<br />
+如果要对objects的集合进行排序，需要使用Collections.sort()方法</p>
+</li>
+<li>
+<p data-line="66">5.fail-fast 与 fail-safe 之间的区别？<br />
+Fail fast快速地报告任何的failure。无论何时任何一个问题都会引发 fail fast系统fails<br />
+在Java Fail fast 迭代器中，迭代objects集合有时会出现并发修改异常，出现这种情况有2个原因<br />
+如果一个线程正在迭代一个集合，而另一个线程同时试图修改这个集合<br />
+在调用remove()方法后，如何我们还试图去修改集合object</p>
+</li>
+</ul>
+<ul>
+<li>
+<p data-line="73">6.Iterator、ListIterator 和 Enumeration的区别？<br />
+Enumeration接口在Java1.2版本开始有，所以Enumeration是合法规范的接口<br />
+Enumeration使用elements()方法<br />
+Iterator对所有Java集合类都有实现<br />
+Iterator使用iterator方法<br />
+Iterator只能往一个方向前进<br />
+ListIterator仅仅对List类型的类实现了<br />
+ListIterator使用listIterator（）方法</p>
+</li>
+<li>
+<p data-line="82">7.Java 中 Set 与 List 有什么不同?<br />
+Set是一个不允许重复元素存在的集合<br />
+Set没有索引<br />
+Set仅仅允许一个null值<br />
+Set有类：HashSet、LinkedHashMap、TreeSet<br />
+List有索引<br />
+List允许N个null值<br />
+List可以按插入顺序显示<br />
+List有类：Vector、ArrayList、LinkedList</p>
+</li>
+<li>
+<p data-line="92">8.arraylist 与 vector 的区别?<br />
+Vector 在Java的第一个版本就引入了，也就是说vector是一个合法规范的类<br />
+ArrayList在Java1.2版本引入的，是Java 集合框架的组成部分<br />
+Vector是同步的<br />
+ArrayList是不同步的</p>
+</li>
+<li>
+<p data-line="98">9.什么类实现了List接口？<br />
+ArrayList<br />
+LinkedList<br />
+Vector</p>
+</li>
+<li>
+<p data-line="103">10.什么类实现了Set接口？<br />
+HashSet<br />
+LinkedHashSet<br />
+TreeSet</p>
+</li>
+<li>
+<p data-line="108">11.如何保证一个集合线程安全？<br />
+Vector, Hashtable, Properties 和 Stack 都是同步的类，所以它们都线程安全的，可以被使用在多线程环境中<br />
+使用Collections.synchronizedList(list)) 方法，可以保证list类是线程安全的<br />
+使用java.util.Collections.synchronizedSet()方法可以保证set类是线程安全的</p>
+</li>
+<li>
+<p data-line="113">12.是否可以往 TreeSet 或者 HashSet 中添加 null 元素？<br />
+可以往 hashset 中添加一个 null<br />
+TreeSet 也允许一个 null值</p>
+</li>
+<li>
+<p data-line="117">13.解释下Collection的接口继承关系？</p>
+</li>
+</ul>
+<ul>
+<li>
+<p data-line="120">14.Iterator符合哪个设计模式？<br />
+Iterator 设计模式</p>
+</li>
+<li>
+<p data-line="123">15.HashSet 实现了哪个数据结构？<br />
+HashSet 内部实现了hashmap</p>
+</li>
+<li>
+<p data-line="126">16.为什么 Collection 不能继承 Cloneable 和 Serializable？<br />
+List和Set唯一继承 Collection 接口<br />
+SortedMap 继承了 Map 接口</p>
+</li>
+<li>
+<p data-line="130">17.hashCode() 和 equals() 方法的重要性？如何在Java中使用它们？<br />
+hashCode() 和 equals() 方法定义在”object”类中<br />
+如果equals() 方法在比较2个对象时返回true，那么hashCode()的返回值必须得一样</p>
+</li>
+<li>
+<p data-line="134">18.array 和 arraylist 的区别？<br />
+Array类似object集合类型，大小固定<br />
+Arraylist是同质和异质元素的集合</p>
+</li>
+<li>
+<p data-line="138">19.什么是 Properties 类？<br />
+Properties 是Hashtable的子类。它被用于维护值的list，其中它们的键、值都是String类型</p>
+</li>
+<li>
+<p data-line="141">20.如何将一个字符串转换为arraylist?<br />
+使用 arrayList.toArray() 方法</p>
+</li>
+</ul>
+<h2 data-line="146" id="3%E3%80%81hashmap-hastable-%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%ABhashtable%E5%92%8Cconcurrenthashtable%E5%91%A2">3、hashmap hastable 底层实现什么区别?hashtable和concurrenthashtable呢?</h2>
+<p data-line="148"><a href="http://mp.weixin.qq.com/s/yl2h2l3jsbCKWX3exTuXqw">HashMap与HashTable深度对比</a></p>
+<p data-line="150">本文基于jdk1.8</p>
+<ul>
+<li>1线程安全性 HashMap是线程不安全的，不适合在多线程内使用 HashTable线程安全，每个方法都加了锁</li>
+<li>2Key，Value值限制 HashMap，key可以为null，只能有一个，value可以为null HashTable，key，value都不能为null 可以从HashTable的put方法看出来，value为null会直接抛出异常，而key为null，在调用key.hashCode()的时候也会抛出空指针异常，不知道为什么不提前手动去判断key为null，个人感觉HashTable唯一存在于jdk的理由是兼容历史代码，毕竟现在都不维护了，而且性能也没有ConcurrentHashMap好</li>
+<li>3.实现的抽象类不同HashMap继承AbstractMap，AbstractMap里面封装了一些常用的map操作，并且开放抽象方法给子类实现 HashTable继承Dictionary，Dictionary里面只是约束了子类需要实现的方法，并且这些方法和Map接口重复，并且从类注释中看到，Dictionary是1.1出现的，而Map接口是1.2出现的，所以推断，Dictionary的残留，也是为了兼容老代码</li>
+<li>4.哈希桶初始化时机不同 HashTable中哈希桶初始化放在构造函数里面 HashMap中哈希桶初始化在第一次put的时候触发，并且逻辑封装在resize()方法里面</li>
+<li>5.哈希表的长度不同 HashMap的长度都是2的幂次方，最小为16 HashTable的默认长度为11，没有限定为2的幂次方</li>
+<li>6.扩容方式不同 HashTable的扩容方式很简单，建一个双倍长度的哈希表，然后循环老的哈希表中的元素，依次计算其新哈希表中的位子，放入新的哈希表 而HashMap基于2的幂次方长度对扩容算法进行了优化,下面截取resize方法中扩容的算法<br />
+算法逻辑如下： 循环哈希表，如果哈希桶只有一个元素，直接计算他在新哈希表的位子并且放入，如果哈西桶是一个红黑树节点，调用红黑树的算法复制到新的哈希表，如果是链表，将链表拆分为2个链表，一个链表不需要换哈西桶的位子，另外一个链表需要换位子，分别将这2个链表放到新的哈希表中 最后这个拆分链表的算法很巧妙<br />
+因为是哈希表长度是2的幂次方，所以做扩容后，计算哈西桶位子时，由原来的hash值&amp;2的n次方-1，改为hash值&amp;2的n+1次方-1，那么我们判断链表中这个元素是否会调换位子的时候，只需要判断&amp;n+1位是否为1，也就是用hash值&amp;2的n次方来判断。 计算新位子的时候也方便了，新的位子就是老的位子加上2的n次方，也就是老哈希表的长度。<br />
+这个算法我也理解了很久，不太懂的朋友，可以自己计算推敲下，十分有趣</li>
+<li>7.哈希桶内元素类型不同 HashTable桶内元素直接为Entry HashMap针对这个又加了优化，如果链表长度超过8个时，会转换为红黑树节点，如果红黑树内节点少于6个时，再转换为链表</li>
+</ul>
+<p data-line="162"><a href="http://mp.weixin.qq.com/s/VIib_YdLudtdryBae5kEkQ">ConurrentHashMap 和 HashTable 的区别</a><br />
+Hashtable和ConcurrentHashMap有什么分别呢？它们都可以用于多线程的环境，但是当Hashtable的大小增加到一定的时候，性能会急剧下降，因为迭代时需要被锁定很长的时间。因为ConcurrentHashMap引入了分割(segmentation)，不论它变得多么大，仅仅需要锁定map的某个部分，而其它的线程不需要等到迭代完成才能访问map。简而言之，在迭代的过程中，ConcurrentHashMap仅仅锁定map的某个部分，而Hashtable则会锁定整个map</p>
+<h2 data-line="165" id="4%E3%80%81hashmap%E5%92%8Ctreemap%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E4%BD%8E%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%98%AF%E4%BB%80%E4%B9%88">4、hashmap和treemap什么区别?低层数据结构是什么?</h2>
+<p data-line="167"><a href="http://mp.weixin.qq.com/s/2b_QFIAiF9Q3V9QY_HyJxw">(43) 剖析TreeMap / 计算机程序的思维逻辑</a></p>
+<p data-line="169">答：TreeMap 实现了 SortMap 接口，其能够根据键排序，默认是按键的升序排序，也可以指定排序的比较器，当用 Iterator 遍历 TreeMap 时得到的记录是排过序的，所以在插入和删除操作上会有些性能损耗，TreeMap 的键和值都不能为空，其为非并发安全 Map，此外 TreeMap 基于红黑树实现。</p>
+<p data-line="171">HashMap 是最常用的 Map，其基于哈希散列表实现，主要根据键的 hashCode 值存储数据，根据键可以直接获取它的值，具有很快的访问速度，当用 Iterator 遍历 HashMap 时得到的记录顺序是随机的，HashMap 只允键值均为空，其为非并发安全 Map。</p>
+<p data-line="173">所以一般情况下我们选用 HashMap，因为 HashMap 的键值对在取出时是随机的，其依据键的 hashCode 值和键的 equals 方法存取数据，具有很快的访问速度，所以在 Map 中插入、删除及索引元素时其是效率最高的实现。而 TreeMap 取出来的是排序后的键值对，所以效率会低点。</p>
+<h2 data-line="175" id="5%E3%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%94%A8%E8%BF%87%E5%90%97%E9%83%BD%E6%9C%89%E4%BB%80%E4%B9%88%E5%8F%82%E6%95%B0%E5%BA%95%E5%B1%82%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84">5、线程池用过吗都有什么参数?底层如何实现的?</h2>
+<p data-line="177"><a href="https://mp.weixin.qq.com/s/JhbFuhGgW-_tbVSqDFqo0g">深入浅出 Java 线程池</a><br />
+<a href="http://mp.weixin.qq.com/s/4CuF4dmcg2ff1r90cSGOyQ">Java 线程池实现的原理</a></p>
+<h2 data-line="180" id="6%E3%80%81sychnized%E5%92%8CLock%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%ABsychnize-%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E6%83%85%E5%86%B5%E6%98%AF%E5%AF%B9%E8%B1%A1%E9%94%81-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E6%98%AF%E5%85%A8%E5%B1%80%E9%94%81%E4%B8%BA%E4%BB%80%E4%B9%88">6、sychnized和Lock什么区别?sychnize 什么情况情况是对象锁? 什么时候是全局锁为什么?</h2>
+<p data-line="182"><a href="http://mp.weixin.qq.com/s/lr0Mg7TSKsIE3AdMBxv1AQ">想进大厂？50个多线程面试题，你会多少？（一）</a><br />
+<a href="http://mp.weixin.qq.com/s/RtfEPR2oclUAu0tXnYAn4Q">Java面试题-基础知识</a><br />
+<a href="http://mp.weixin.qq.com/s/0A1aydVEOGlH4rSihaOJ-Q">Java面试宝典</a></p>
+<h2 data-line="187" id="7%E3%80%81ThreadLocal-%E6%98%AF%E4%BB%80%E4%B9%88%E5%BA%95%E5%B1%82%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%99%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90%E5%91%97">7、ThreadLocal 是什么底层如何实现?写一个例子呗?</h2>
+<p data-line="189"><a href="http://mp.weixin.qq.com/s/KSCOpxX7hcXeJ7VqcRJDSA">ThreadLocal实现原理详解</a><br />
+<a href="http://mp.weixin.qq.com/s/fy0wBWpJKRjltJPykzQ12Q">ThreadLocal使用案例</a><br />
+<a href="https://www.zhihu.com/question/23089780?utm_source=wechat_search&amp;utm_medium=organic">ThreadLocal和synchronized的区别? - 知乎</a><br />
+<a href="http://mp.weixin.qq.com/s/9Er8yYiCkPv0crpxnLC6cA">深入理解ThreadLocal</a></p>
+<h2 data-line="194" id="8%E3%80%81volitile%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86">8、volitile的工作原理?</h2>
+<p data-line="196"><a href="http://mp.weixin.qq.com/s/4l4bXbNP2utFg0OvPoi_jg">深入了解volatile原理</a></p>
+<h2 data-line="198" id="9%E3%80%81cas%E7%9F%A5%E9%81%93%E5%90%97%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84">9、cas知道吗如何实现的?</h2>
+<p data-line="200"><a href="http://mp.weixin.qq.com/s/T_qB3xSk9Ov33kXe_2d2zA">CAS实现单点登录（SSO）过程浅析</a></p>
+<h2 data-line="202" id="10%E3%80%81%E8%AF%B7%E7%94%A8%E8%87%B3%E5%B0%91%E5%9B%9B%E7%A7%8D%E5%86%99%E6%B3%95%E5%86%99%E4%B8%80%E4%B8%AA%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F">10、请用至少四种写法写一个单例模式?</h2>
+<p data-line="204"><a href="http://mp.weixin.qq.com/s/LpM6FZHO5pPCKCkbdWPxCA">聊一聊Java中的四种单例模式</a></p>
+<h1 data-line="212" id="JVM">JVM</h1>
+<h2 data-line="213" id="1%E3%80%81%E8%AF%B7%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BJVM%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E7%94%A8%E8%BF%87%E4%BB%80%E4%B9%88%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8%E9%83%BD%E8%AF%B4%E8%AF%B4%E5%91%97">1、请介绍一下JVM内存模型??用过什么垃圾回收器都说说呗</h2>
+<p data-line="215"><a href="http://mp.weixin.qq.com/s/pzuO8b_CZ7sNuRLTy2lJ3Q">JVM内存模型和垃圾回收GC策略</a></p>
+<h2 data-line="217" id="2%E3%80%81%E7%BA%BF%E4%B8%8A%E5%8F%91%E9%80%81%E9%A2%91%E7%B9%81full-gc%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86-CPU-%E4%BD%BF%E7%94%A8%E7%8E%87%E8%BF%87%E9%AB%98%E6%80%8E%E4%B9%88%E5%8A%9E">2、线上发送频繁full gc如何处理? CPU 使用率过高怎么办?</h2>
+<p data-line="218">如何定位问题?如何解决说一下解决思路和处理方法</p>
+<p data-line="220"><a href="http://mp.weixin.qq.com/s/r68K0T6ekH0tJgXW3ZSa1A">JAVA调优经验漫谈</a><br />
+<a href="http://mp.weixin.qq.com/s/HSn1pNyA-jyujymmT1Ycrw">JVM 初探——使用堆外内存减少 Full GC（上）</a><br />
+<a href="http://mp.weixin.qq.com/s/1uYN6tf95D15jTVHtb6u4Q">听阿里巴巴JVM工程师为你分析常见Java故障案例</a><br />
+<a href="http://mp.weixin.qq.com/s/CiXC4cRGVZgk7T-BgxQXCQ">java面试题大合集（开发者必看一）</a></p>
+<h2 data-line="226" id="3%E3%80%81%E7%9F%A5%E9%81%93%E5%AD%97%E8%8A%82%E7%A0%81%E5%90%97%E5%AD%97%E8%8A%82%E7%A0%81%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9BInteger-x-5int-y-5%EF%BC%8C%E6%AF%94%E8%BE%83x-y-%E9%83%BD%E7%BB%8F%E8%BF%87%E5%93%AA%E4%BA%9B%E6%AD%A5%E9%AA%A4">3、知道字节码吗?字节码都有哪些?Integer x =5,int y =5，比较x =y 都经过哪些步骤?</h2>
+<p data-line="227"><a href="http://mp.weixin.qq.com/s/jv7avKM3Z3zK8sJNdtii_g">Java 函数调用是传值还是传引用？ 从字节码角度来看看！</a><br />
+<a href="http://mp.weixin.qq.com/s/j0cQryyw_DPNlgveSLpQVA">【了解】 Java 字节码</a><br />
+<a href="http://mp.weixin.qq.com/s/U3XQ7zhxoTBJt4SVNKYepQ">Java知识：面试题2：int 和 Integer 有什么区别？</a></p>
+<h2 data-line="232" id="4%E3%80%81%E8%AE%B2%E8%AE%B2%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%91%97%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8%EF%BC%8C%E8%BF%99%E4%BA%9B%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8%E9%83%BD%E5%8A%A0%E8%BD%BD%E5%93%AA%E4%BA%9B%E6%96%87%E4%BB%B6">4、讲讲类加载机制呗都有哪些类加载器，这些类加载器都加载哪些文件?</h2>
+<p data-line="233">手写一下类加载Demo</p>
+<p data-line="235"><a href="https://mp.weixin.qq.com/s/Zuce2Ip41KgiB_iRL5__Wg">深入理解Java类加载机制</a><br />
+<a href="http://mp.weixin.qq.com/s/ODvfApBM6WZkTR7TDFZuNQ">Java类加载器详解（上）</a></p>
+<h2 data-line="238" id="5%E3%80%81%E7%9F%A5%E9%81%93osgi%E5%90%97-%E4%BB%96%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84">5、知道osgi吗? 他是如何实现的???</h2>
+<p data-line="240"><a href="http://mp.weixin.qq.com/s/INFDz9sOcYKvqMAVc6iwKA">【0040】你了解OSGI类加载器架构吗？</a><br />
+<a href="http://mp.weixin.qq.com/s/JKIGVce4heuM2FF4xrlI1A">揭秘阿里巴巴开源框架JarsLink</a></p>
+<h2 data-line="243" id="6%E3%80%81%E8%AF%B7%E9%97%AE%E4%BD%A0%E5%81%9A%E8%BF%87%E5%93%AA%E4%BA%9BJVM%E4%BC%98%E5%8C%96%E4%BD%BF%E7%94%A8%E4%BB%80%E4%B9%88%E6%96%B9%E6%B3%95%E8%BE%BE%E5%88%B0%E4%BB%80%E4%B9%88%E6%95%88%E6%9E%9C">6、请问你做过哪些JVM优化?使用什么方法达到什么效果???</h2>
+<p data-line="245"><a href="http://mp.weixin.qq.com/s/flUPPpjncUa6gJf1XXvaOg">jvm优化——性能调优</a><br />
+<a href="https://mp.weixin.qq.com/s/t1Cx1n6irN1RWG8HQyHU2w">从实际案例聊聊Java应用的GC优化</a></p>
+<h2 data-line="248" id="7%E3%80%81classforName%E2%80%9CjavalangString%E2%80%9D%E5%92%8CString-classgetClassLoader-LoadClass%E2%80%9CjavalangString%E2%80%9D-%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E5%95%8A">7、classforName(“java.lang.String”)和String classgetClassLoader() LoadClass(“java.lang.String”) 什么区别啊??</h2>
+<p data-line="250"><a href="https://blog.csdn.net/caomiao2006/article/details/47735657">Java中Class.forName和ClassLoader.loadClass的区别 - CSDN博客</a></p>
+<h1 data-line="253" id="Spring">Spring</h1>
+<h2 data-line="254" id="1%E3%80%81spring%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9C%BA%E5%88%B6%E5%95%8A-AOP%E5%BA%95%E5%B1%82%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%95%8A-IOC%E5%91%A2">1、spring都有哪些机制啊 AOP底层如何实现的啊 IOC呢??</h2>
+<p data-line="256"><a href="http://mp.weixin.qq.com/s/0NTsllMFxcZPBMBXsqoGpg">spring和springMVC的面试问题总结</a><br />
+<a href="http://mp.weixin.qq.com/s/BrUX-j-0xJdUPHa7vCF5xQ">Spring AOP 的实现机制</a><br />
+<a href="http://mp.weixin.qq.com/s/0NTsllMFxcZPBMBXsqoGpg">spring和springMVC的面试问题总结</a><br />
+<a href="http://mp.weixin.qq.com/s/LPGPOMt12TvMAMFOaFLU3g">Spring【AOP模块】就这么简单</a></p>
+<h2 data-line="261" id="2%E3%80%81cgLib%E7%9F%A5%E9%81%93%E5%90%97%E4%BB%96%E5%92%8Cjdk%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AAjdk%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E5%91%97">2、cgLib知道吗?他和jdk动态代理什么区别?手写一个jdk动态代理呗?</h2>
+<p data-line="262"><a href="http://mp.weixin.qq.com/s/NPgPrOCvC9vU5TINUFoQIA">Java动态代理与CGLIB</a><br />
+<a href="http://mp.weixin.qq.com/s/caEpFhjE6FnnvoGMCQpU0g">http://mp.weixin.qq.com/s/caEpFhjE6FnnvoGMCQpU0g</a></p>
+<h1 data-line="265" id="%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</h1>
+<h2 data-line="266" id="1%E3%80%81%E4%BD%BF%E7%94%A8mysq1%E7%B4%A2%E5%BC%95%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8E%9F%E5%88%99-%E7%B4%A2%E5%BC%95%E4%BB%80%E4%B9%88%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3tree-%E5%92%8CB-tree-%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB">1、使用mysq1索引都有哪些原则? ?索引什么数据结构? 3+tree 和B tree 什么区别?</h2>
+<p data-line="267"><a href="http://mp.weixin.qq.com/s/OBIOAjHo5k8ioNz-F2LoQA">一张思维导图学会如何构建高性能MySQL系统！</a><br />
+<a href="https://mp.weixin.qq.com/s/3uhQhvh5EClHjK-WxyG1Jg">Mysql索引以及数据结构</a></p>
+<h2 data-line="269" id="2%E3%80%81mysq1%E6%9C%89%E5%93%AA%E4%BA%9B%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E5%95%8A%E9%83%BD%E6%9C%89%E5%95%A5%E5%8C%BA%E5%88%AB-%E8%A6%81%E8%AF%A6%E7%BB%86">2、mysq1有哪些存储引擎啊?都有啥区别? 要详细!</h2>
+<p data-line="270"><a href="http://mp.weixin.qq.com/s/kGPrBsJwsWt92R0fSySiVw">MySQL存储引擎MyISAM与InnoDB区别</a><br />
+<a href="http://mp.weixin.qq.com/s/8Xe9GaY6e8wCP4pJtGqoYA">MySQL数据表存储引擎类型及特性</a></p>
+<h2 data-line="272" id="3%E3%80%81%E8%AE%BE%E8%AE%A1%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B1%82%E9%9D%A2%E8%AF%A5%E6%80%8E%E4%B9%88%E8%AE%BE%E8%AE%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%B1%BB%E5%9E%8B%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%91%80">3、设计高并发系统数据库层面该怎么设计??数据库锁有哪些类型?如何实现呀?</h2>
+<p data-line="273"><a href="http://mp.weixin.qq.com/s/fvovCMNjgbMdX2rcrge3JA">大规模分布式应用之海量数据和高并发解决方案总结一二</a><br />
+<a href="http://mp.weixin.qq.com/s/6fX06LhKTqG7CMaAa88bOA">MySQL数据库的锁机制</a></p>
+<h2 data-line="276" id="4%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1%E6%9C%89%E5%93%AA%E4%BA%9B">4、数据库事务有哪些?</h2>
+<p data-line="277"><a href="http://mp.weixin.qq.com/s/DQAs8u0LSeRIsx0uyGjZTg">彻底理解数据库事务</a></p>
+<h1 data-line="280" id="%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8">分库分表</h1>
+<h2 data-line="281" id="1%E3%80%81%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E5%8F%AF%E4%BB%A5%E5%8A%A8%E6%80%81%E6%89%A9%E5%AE%B9%E7%BC%A9%E5%AE%B9%E7%9A%84%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E6%96%B9%E6%A1%88">1、如何设计可以动态扩容缩容的分库分表方案?</h2>
+<p data-line="282"><a href="http://mp.weixin.qq.com/s/uJce1HuBpD-OcjS7C66SOA">技术架构系列 | 几种架构设计模式导论(下)</a></p>
+<h2 data-line="283" id="2%E3%80%81%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9B%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E4%B8%AD%E9%97%B4%E4%BB%B6%EF%BC%8C%E6%9C%89%E5%95%A5%E4%BC%98%E7%82%B9%E5%92%8C%E7%BC%BA%E7%82%B9%E8%AE%B2%E4%B8%80%E4%B8%8B%E4%BD%A0%E4%BA%86%E8%A7%A3%E7%9A%84%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E4%B8%AD%E9%97%B4%E4%BB%B6%E7%9A%84%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86">2、用过哪些分库分表中间件，有啥优点和缺点?讲一下你了解的分库分表中间件的底层实现原理?</h2>
+<p data-line="284"><a href="http://mp.weixin.qq.com/s/A-X59OEBJOrPA-kpPf6Vfw">解读分库分表中间件Sharding-JDBC</a></p>
+<h2 data-line="285" id="3%E3%80%81%E6%88%91%E7%8E%B0%E5%9C%A8%E6%9C%89%E4%B8%80%E4%B8%AA%E6%9C%AA%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%9A%84%E7%B3%BB%E7%BB%9F%EF%BC%8C%E4%BB%A5%E5%90%8E%E7%B3%BB%E7%BB%9F%E9%9C%80%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%EF%BC%8C%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%EF%BC%8C%E8%AE%A9%E6%9C%AA%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%9A%84%E7%B3%BB%E7%BB%9F%E5%8A%A8%E6%80%81%E5%88%87%E6%8D%A2%E5%88%B0%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%9A%84%E7%B3%BB%E7%BB%9F%E4%B8%8ATCC-%E9%82%A3%E8%8B%A5%E5%87%BA%E7%8E%B0%E7%BD%91%E7%BB%9C%E5%8E%9F%E5%9B%A0%EF%BC%8C%E7%BD%91%E7%BB%9C%E8%BF%9E%E4%B8%8D%E9%80%9A%E6%80%8E%E4%B9%88%E5%8A%9E%E5%95%8A">3、我现在有一个未分库分表的系统，以后系统需分库分表，如何设计，让未分库分表的系统动态切换到分库分表的系统上???TCC? 那若出现网络原因，网络连不通怎么办啊???</h2>
+<p data-line="286"><a href="http://mp.weixin.qq.com/s/eyiN_AwwkwM7F3ZS-xeepw">解读分库分表中间件Sharding-JDBC</a><br />
+<a href="https://www.zhihu.com/question/21612832?utm_source=wechat_search&amp;utm_medium=organic">怎样实现一个支持TCC事务的业务服务? - 知乎</a></p>
+<h2 data-line="289" id="4%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%9F%A5%E9%81%93%E5%90%97-%E4%BD%A0%E4%BB%AC%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%E7%9A%84">4、分布式事务知道吗? 你们怎么解决的?</h2>
+<p data-line="290"><a href="https://mp.weixin.qq.com/s/yBquVKyKnhpy2yPxY-0eqA">【系统架构】大白话聊聊分布式事务</a></p>
+<h2 data-line="291" id="5%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E5%95%8A">5、为什么要分库分表啊???</h2>
+<p data-line="292"><a href="https://mp.weixin.qq.com/s/_5HALZWHfFfjd84WotDSiA">浅谈数据分库分表之道</a></p>
+<h2 data-line="293" id="6%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E7%AE%97%E6%B3%95%E7%9F%A5%E9%81%93%E4%B8%80%E8%87%B4%E6%80%A7hash%E5%90%97%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%8Bjava%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E4%BD%A0%E8%8B%A5userId%E5%8F%96%E6%91%B8%E5%88%86%E7%89%87%EF%BC%8C%E9%82%A3%E6%88%91%E8%A6%81%E6%9F%A5%E4%B8%80%E6%AE%B5%E8%BF%9E%E7%BB%AD%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E6%95%B0%E6%8D%AE%E6%80%8E%E4%B9%88%E5%8A%9E">6、分布式寻址方式都有哪些算法知道一致性hash吗?手写一下java实现代码??你若userId取摸分片，那我要查一段连续时间里的数据怎么办???</h2>
+<p data-line="294"><a href="http://mp.weixin.qq.com/s/v7aB9Y56lgwWaI-56GuRnQ">一致性Hash算法基本原理与实现</a><br />
+<a href="http://mp.weixin.qq.com/s/7p7CKh7aJBcxyA6GkKo_8Q">一致性hash原理与实现</a><br />
+<a href="https://www.cnblogs.com/li3807/p/8461849.html">Mycat 分片规则详解–范围取模分片 - 汇元李雪 - 博客园</a></p>
+<h2 data-line="298" id="7%E3%80%81%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E4%B8%BB%E9%94%AE%E9%97%AE%E9%A2%98%E6%9C%89%E4%BB%80%E4%B9%88%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88">7、如何解决分库分表主键问题有什么实现方案??</h2>
+<p data-line="300"><a href="https://mp.weixin.qq.com/s/sJxjnFNM0bvAtYvBozg--w">水平分库分表的关键步骤以及可能遇到的问题</a></p>
+<h1 data-line="303" id="%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98">分布式缓存</h1>
+<h2 data-line="304" id="1%E3%80%81redis%E5%92%8Cmemcheched-%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8D%95%E7%BA%BF%E7%A8%8B%E7%9A%84redis%E6%AF%94%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84memched%E6%95%88%E7%8E%87%E8%A6%81%E9%AB%98%E5%95%8A">1、redis和memcheched 什么区别为什么单线程的redis比多线程的memched效率要高啊?</h2>
+<p data-line="306"><a href="http://mp.weixin.qq.com/s/F_umE6NsnAZFYRw61pjlIg">（实用篇）Redis和Memcached有什么区别？</a><br />
+<a href="https://mp.weixin.qq.com/s/QcP77_VD9XZ2EUhhBSQw8A">Redis 和 Memcached 的区别</a></p>
+<h2 data-line="309" id="2%E3%80%81redis%E6%9C%89%E4%BB%80%E4%B9%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E9%83%BD%E5%9C%A8%E5%93%AA%E4%BA%9B%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%95%8A">2、redis有什么数据类型都在哪些场景下使用啊?</h2>
+<p data-line="311"><a href="http://mp.weixin.qq.com/s/V81hP9QI_boMjnpryxRDhA">Redis常见的5种不同的数据类型详解</a></p>
+<h2 data-line="313" id="3%E3%80%81reids%E7%9A%84%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%E6%98%AF%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84redis%E7%9A%84%E9%9B%86%E7%BE%A4%E6%A8%A1%E5%BC%8F%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%91%A2redis%E7%9A%84key%E6%98%AF%E5%A6%82%E4%BD%95%E5%AF%BB%E5%9D%80%E7%9A%84%E5%95%8A">3、reids的主从复制是怎么实现的redis的集群模式是如何实现的呢redis的key是如何寻址的啊?</h2>
+<p data-line="315"><a href="http://mp.weixin.qq.com/s/YQ-bFILykeGeZP1OBjISyQ">《Redis设计与实现》读书笔记（二十四） ——Redis主从复制原理</a><br />
+<a href="http://mp.weixin.qq.com/s/SPrvOVx6ZkPJh8WRO3uARg">4.0即将出世，历数那些年redis集群方案</a><br />
+<a href="http://mp.weixin.qq.com/s/_3B1cKDatTZ2uA__Lny5Fw">Redis 存储机制详解</a></p>
+<h2 data-line="319" id="4%E3%80%81%E4%BD%BF%E7%94%A8redis%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E4%BD%BF%E7%94%A8zk%E5%8F%AF%E4%BB%A5%E5%90%97%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%95%8A%E8%BF%99%E4%B8%A4%E7%A7%8D%E5%93%AA%E4%B8%AA%E6%95%88%E7%8E%87%E6%9B%B4%E9%AB%98%E5%95%8A">4、使用redis如何设计分布式锁?使用zk可以吗?如何实现啊这两种哪个效率更高啊??</h2>
+<p data-line="321"><a href="http://mp.weixin.qq.com/s/vAb9TVAyiCYsmLNPQLDxpw">解析分布式锁之redis实现</a><br />
+<a href="http://mp.weixin.qq.com/s/7vUAFzrShRQ43pCapTqTog">基于Zk实现分布式锁</a><br />
+<a href="http://mp.weixin.qq.com/s/dWgpIHamjZpu6aFj7OPD9w">分布式锁的多种实现方式~</a><br />
+<a href="https://mp.weixin.qq.com/s/2BwsDoK2fyXOGCRt3SSYSg">基于Zookeeper的分布式锁的简单介绍及实现</a></p>
+<h2 data-line="326" id="5%E3%80%81%E7%9F%A5%E9%81%93redis%E7%9A%84%E6%8C%81%E4%B9%85%E5%8C%96%E5%90%97%E9%83%BD%E6%9C%89%E4%BB%80%E4%B9%88%E7%BC%BA%E7%82%B9%E4%BC%98%E7%82%B9%E5%95%8A-%E5%85%B7%E4%BD%93%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E5%91%A2">5、知道redis的持久化吗都有什么缺点优点啊? ?具体底层实现呢?</h2>
+<p data-line="328"><a href="http://mp.weixin.qq.com/s/8AzzGUGw1AkjY-cHggSi1Q">redis的优缺点及使用场景</a><br />
+<a href="http://mp.weixin.qq.com/s/XT0W567ZVwtKHg67QIV_jQ">Redis底层数据结构及对象类型实现</a></p>
+<h2 data-line="331" id="6%E3%80%81redis%E8%BF%87%E6%9C%9F%E7%AD%96%E7%95%A5%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9BLRU-%E5%86%99%E4%B8%80%E4%B8%8Bjava%E7%89%88%E6%9C%AC%E7%9A%84%E4%BB%A3%E7%A0%81%E5%90%A7">6、redis过期策略都有哪些LRU 写一下java版本的代码吧??</h2>
+<p data-line="334"><a href="https://mp.weixin.qq.com/s/dxDadazH4b86Ku7r4fN6bA">Redis 数据库、键过期的实现</a><br />
+<a href="http://mp.weixin.qq.com/s/fpupqLp-wjR8fQvYSQhVLg">Redis 内存为什么不宜过大</a></p>
+<h1 data-line="340" id="%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6">分布式服务框架</h1>
+<h2 data-line="341" id="1%E3%80%81%E8%AF%B4%E4%B8%80%E4%B8%8Bdubbo%E7%9A%84%E5%AE%9E%E7%8E%B0%E8%BF%87%E7%A8%8B%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83%E6%8C%82%E4%BA%86%E5%8F%AF%E4%BB%A5%E7%BB%A7%E7%BB%AD%E9%80%9A%E4%BF%A1%E5%90%97">1、说一下dubbo的实现过程注册中心挂了可以继续通信吗??</h2>
+<p data-line="343"><a href="http://mp.weixin.qq.com/s/ScwcDE-YZ8qNWNOd3ZhW8w">Dubbo之注册与发现</a></p>
+<h2 data-line="345" id="2%E3%80%81zk%E5%8E%9F%E7%90%86%E7%9F%A5%E9%81%93%E5%90%97zk%E9%83%BD%E5%8F%AF%E4%BB%A5%E5%B9%B2%E4%BB%80%E4%B9%88Paxos%E7%AE%97%E6%B3%95%E7%9F%A5%E9%81%93%E5%90%97%E8%AF%B4%E4%B8%80%E4%B8%8B%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E7%8E%B0">2、zk原理知道吗zk都可以干什么Paxos算法知道吗?说一下原理和实现??</h2>
+<p data-line="347"><a href="http://mp.weixin.qq.com/s/lUheJrPbTLVqW5c0qOu_Sw">Zookeeper工作原理</a></p>
+<h2 data-line="349" id="3%E3%80%81dubbo%E6%94%AF%E6%8C%81%E5%93%AA%E4%BA%9B%E5%BA%8F%E5%88%97%E5%8C%96%E5%8D%8F%E8%AE%AEhessian-%E8%AF%B4%E4%B8%80%E4%B8%8Bhessian%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84PB%E7%9F%A5%E9%81%93%E5%90%97%E4%B8%BA%E5%95%A5PB%E6%95%88%E7%8E%87%E6%98%AF%E6%9C%80%E9%AB%98%E7%9A%84%E5%95%8A">3、dubbo支持哪些序列化协议?hessian 说一下hessian的数据结构PB知道吗为啥PB效率是最高的啊??</h2>
+<p data-line="351"><a href="http://mp.weixin.qq.com/s/2wjyTC-XWgC_AcHWse9hfw">Dubbo中使用高效的Java序列化（Kryo和FST）</a><br />
+<a href="https://www.zhihu.com/question/24623031?utm_source=wechat_search&amp;utm_medium=organic">Hessian 矩阵的特征值有什么含义？ - 知乎</a></p>
+<h2 data-line="354" id="4%E3%80%81%E7%9F%A5%E9%81%93netty%E5%90%97%E2%80%99netty%E5%8F%AF%E4%BB%A5%E5%B9%B2%E5%98%9B%E5%91%80NIOBIOAIO-%E9%83%BD%E6%98%AF%E4%BB%80%E4%B9%88%E5%95%8A%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E5%95%8A">4、知道netty吗’netty可以干嘛呀NIO,BIO,AIO 都是什么啊有什么区别啊?</h2>
+<p data-line="356"><a href="http://mp.weixin.qq.com/s/3LmsDHJkjs3R60kDehbqPA">BIO,NIO,AIO编程比较</a></p>
+<h2 data-line="358" id="5%E3%80%81dubbo%E5%A4%8D%E5%88%B6%E5%9D%87%E8%A1%A1%E7%AD%96%E7%95%A5%E5%92%8C%E9%AB%98%E5%8F%AF%E7%94%A8%E7%AD%96%E7%95%A5%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E5%95%8A%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E7%AD%96%E7%95%A5%E5%91%A2">5、dubbo复制均衡策略和高可用策略都有哪些啊动态代理策略呢?</h2>
+<p data-line="360"><a href="http://mp.weixin.qq.com/s/Rl4I6rBsNcid8fdFr81iEw">Dubbo与Zookeeper、SpringMVC整合和使用（负载均衡、容错）</a></p>
+<h2 data-line="362" id="6%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%9B%E8%A1%8C%E7%B3%BB%E7%BB%9F%E6%8B%86%E5%88%86%E5%95%8A%E6%8B%86%E5%88%86%E4%B8%8D%E7%94%A8dubbo%E5%8F%AF%E4%BB%A5%E5%90%97%E2%80%99dubbo%E5%92%8Cthrift%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E5%95%8A">6、为什么要进行系统拆分啊拆分不用dubbo可以吗’dubbo和thrift什么区别啊?</h2>
+<p data-line="364"><a href="http://mp.weixin.qq.com/s/I8ZGA8a3mQxWJgyJq2JHyg">浅谈Thrift内部实现原理</a><br />
+<a href="http://mp.weixin.qq.com/s/ZQGrs4LfyrK2YZeT1geU8Q">Thrift连接池那点事</a></p>
+<h1 data-line="372" id="%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97">分布式消息队列</h1>
+<h2 data-line="373" id="1%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%95%8A%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E7%82%B9%E5%92%8C%E7%BC%BA%E7%82%B9%E5%95%8A">1、为什么使用消息队列啊消息队列有什么优点和缺点啊?</h2>
+<ul>
+<li><a href="http://mp.weixin.qq.com/s/cNKFuXnBxtBdJx77BuXdWQ">消息队列在分布式系统中的应用</a></li>
+<li><a href="http://mp.weixin.qq.com/s/l5tPD10y9lMOGlaOglgATg">系统引入消息队列的思考</a></li>
+</ul>
+<h2 data-line="377" id="2%E3%80%81%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E7%9A%84%E9%AB%98%E5%8F%AF%E7%94%A8%E5%95%8A%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%B6%88%E6%81%AF%E4%B8%8D%E8%A2%AB%E9%87%8D%E5%A4%8D%E6%B6%88%E8%B4%B9%E5%95%8A">2、如何保证消息队列的高可用啊如何保证消息不被重复消费啊</h2>
+<ul>
+<li><a href="http://mp.weixin.qq.com/s/6lXQC0r6RzLcE45k5fo-Xg">再谈消息队列技术</a></li>
+<li><a href="http://mp.weixin.qq.com/s/GfbSJRzAXgNsOEHzSYYnmA">消息队列设计精要</a></li>
+</ul>
+<h2 data-line="380" id="3%E3%80%81kafka-%EF%BC%8Cactivemqrabbitmq-%EF%BC%8Crocketmq%E9%83%BD%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E7%82%B9%EF%BC%8C%E7%BC%BA%E7%82%B9%E5%95%8A">3、kafka ，activemq,rabbitmq ，rocketmq都有什么优点，缺点啊???</h2>
+<ul>
+<li>
+<p data-line="381"><a href="http://mp.weixin.qq.com/s/p2nWHEo88oCiXMF6NwBfWA">【中间件】消息队列（一）：RabbitMQ、ActiveMQ、Kafka和Redis</a></p>
+</li>
+<li>
+<p data-line="383"><a href="http://mp.weixin.qq.com/s/6PmcXJZVyWYZPssveeNkIw">阿里分布式消息中间件RocketMQ的设计思路与技术细节</a></p>
+</li>
+</ul>
+<h2 data-line="384" id="4%E3%80%81%E5%A6%82%E6%9E%9C%E8%AE%A9%E4%BD%A0%E5%86%99%E4%B8%80%E4%B8%AA%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%EF%BC%8C%E8%AF%A5%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%95%8A%E8%AF%B4%E4%B8%80%E4%B8%8B%E4%BD%A0%E7%9A%84%E6%80%9D%E8%B7%AF">4、如果让你写一个消息队列，该如何进行架构设计啊?说一下你的思路</h2>
+<ul>
+<li><a href="http://mp.weixin.qq.com/s/ZjYXQpBE9uL4q99xA76iBw">互联网业务场景下消息队列架构</a></li>
+<li><a href="http://mp.weixin.qq.com/s/qZJYCsy6UK1ePHFQr22E5Q">大型网站架构系列：消息队列</a></li>
+</ul>
+<h1 data-line="391" id="%E5%88%86%E5%B8%83%E5%BC%8F%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E">分布式搜索引擎</h1>
+<h2 data-line="392" id="1%E3%80%81es%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B%E5%AE%9E%E7%8E%B0%E6%98%AF%E5%A6%82%E4%BD%95%E7%9A%84%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84%E5%95%8A">1、es的工作过程实现是如何的?如何实现分布式的啊</h2>
+<ul>
+<li>
+<p data-line="394"><a href="http://mp.weixin.qq.com/s/k_FjSOqZmTaCknBRwaiw7Q">Elasticsearch 架构以及源码概览</a></p>
+</li>
+<li>
+<p data-line="396"><a href="http://mp.weixin.qq.com/s/gqxeNWjiVs2p0H9TCKWnEg">从Elasticsearch来看分布式系统架构设计</a></p>
+</li>
+<li>
+<p data-line="398"><a href="http://mp.weixin.qq.com/s/XPZtSiSwrsiaIuwFWYzStw">Elasticsearch基础概念理解</a></p>
+</li>
+</ul>
+<h2 data-line="400" id="2%E3%80%81es%E5%9C%A8%E6%95%B0%E6%8D%AE%E9%87%8F%E5%BE%88%E5%A4%A7%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B-%E6%95%B0%E5%8D%81%E4%BA%BF%E7%BA%A7%E5%88%AB%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E6%9F%A5%E8%AF%A2%E6%95%88%E7%8E%87%E5%95%8A">2、es在数据量很大的情况下( 数十亿级别)如何提高查询效率啊?</h2>
+<ul>
+<li>
+<p data-line="402"><a href="http://mp.weixin.qq.com/s/PxfEYYGnjC0nx_q2GpNISQ">基于Elasticsearch构建千亿流量日志搜索平台实战</a></p>
+</li>
+<li>
+<p data-line="404"><a href="http://mp.weixin.qq.com/s/z6C8adcSJ-uKOgUG9z8iZQ">大数据主题分享第三期 | 基于ELK的亿级实时日志分析平台实践</a></p>
+</li>
+</ul>
+<h2 data-line="406" id="3%E3%80%81es%E7%9A%84%E6%9F%A5%E8%AF%A2%E6%98%AF%E4%B8%80%E4%B8%AA%E6%80%8E%E4%B9%88%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B%E5%BA%95%E5%B1%82%E7%9A%84lucence%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B%E5%91%97%E5%80%92%E6%8E%92%E7%B4%A2%E5%BC%95%E7%9F%A5%E9%81%93%E5%90%97es%E5%92%8Cmongdb%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E5%95%8A%E9%83%BD%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%95%8A">3、es的查询是一个怎么的工作过程?底层的lucence介绍一下呗倒排索引知道吗?es和mongdb什么区别啊都在什么场景下使用啊?</h2>
+<ul>
+<li>
+<p data-line="408"><a href="http://mp.weixin.qq.com/s/osOggCYvzun6X6yquD7cYg">浅析ElasticSearch原理</a></p>
+</li>
+<li>
+<p data-line="410"><a href="http://mp.weixin.qq.com/s/dhawxmamddBSTFRkXovEyw">索引技术简介</a></p>
+</li>
+<li>
+<p data-line="412"><a href="https://mp.weixin.qq.com/s/I5xlel4OKXJM41Dd56KUqw">给 Java 开发者的 10 个大数据工具和框架</a></p>
+</li>
+</ul>
+<h1 data-line="416" id="%E9%AB%98%E5%B9%B6%E5%8F%91%E9%AB%98%E5%8F%AF%E7%94%A8%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1">高并发高可用架构设计</h1>
+<h2 data-line="417" id="1%E3%80%81%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E9%AB%98%E5%B9%B6%E5%8F%91%E9%AB%98%E5%8F%AF%E7%94%A8%E7%B3%BB%E7%BB%9F">1、如何设计一个高并发高可用系统</h2>
+<ul>
+<li>
+<p data-line="419"><a href="http://mp.weixin.qq.com/s/7nfSvxZ4vJAxpIN5rCdaCw">究竟啥才是互联网架构“高可用”</a></p>
+</li>
+<li>
+<p data-line="421"><a href="http://mp.weixin.qq.com/s/VOMynCK1XpEwK_NPg6LmWQ">架构学习之路——高可用高并发系统设计原则</a></p>
+</li>
+</ul>
+<h2 data-line="424" id="2%E3%80%81%E5%A6%82%E4%BD%95%E9%99%90%E6%B5%81%E5%B7%A5%E7%A8%8B%E4%B8%AD%E6%80%8E%E4%B9%88%E5%81%9A%E7%9A%84%EF%BC%8C%E8%AF%B4%E4%B8%80%E4%B8%8B%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0">2、如何限流?工程中怎么做的，说一下具体实现</h2>
+<ul>
+<li>
+<p data-line="426"><a href="http://mp.weixin.qq.com/s/xB-AsxCC2KYoW1nO88-Iqg">【高并发系列】分布式高并发限流系统应用设计</a></p>
+</li>
+<li>
+<p data-line="428"><a href="http://mp.weixin.qq.com/s/8JMA-a2d2vuMow8APyPS0A">高并发系统限流中的漏桶算法和令牌桶算法，通过流量整形和速率限制提升稳定性</a></p>
+</li>
+</ul>
+<ul>
+<li><a href="http://mp.weixin.qq.com/s/7S4vxHgI4kRRER3ATGTnkg">高手进阶之亿级流量电商系统的大型高并发与高可用缓存</a></li>
+</ul>
+<h2 data-line="435" id="3%E3%80%81%E7%BC%93%E5%AD%98%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E7%9A%84%E7%BC%93%E5%AD%98%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%BD%93%E4%BC%9A%E9%80%A0%E6%88%90%E4%BB%80%E4%B9%88%E5%90%8E%E6%9E%9C">3、缓存如何使用的缓存使用不当会造成什么后果?</h2>
+<ul>
+<li>
+<p data-line="437"><a href="http://mp.weixin.qq.com/s/jy1q3OnbANEmQR750f0S6Q">高并发架构技术|缓存失效、缓存穿透问题 PHP 代码解决</a></p>
+</li>
+<li>
+<p data-line="439"><a href="http://mp.weixin.qq.com/s/s8jf0UeQfKJ_WqGDBTzE4A">缓存穿透，缓存雪崩，缓存并发处理策略</a></p>
+</li>
+</ul>
+<h2 data-line="441" id="4%E3%80%81%E5%A6%82%E4%BD%95%E7%86%94%E6%96%AD%E5%95%8A%E7%86%94%E6%96%AD%E6%A1%86%E6%9E%B6%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86">4、如何熔断啊?熔断框架都有哪些?具体实现原理</h2>
+<ul>
+<li>
+<p data-line="442"><a href="https://mp.weixin.qq.com/s/sr_tiNnHsAaDmeyKOPiP5g">熔断器设计模式</a></p>
+</li>
+<li>
+<p data-line="444"><a href="http://mp.weixin.qq.com/s/uF09oVzf_1Tz_ZnHXQjyzA">降级特技之使用Hystrix实现降级和熔断—《亿级流量网站架构核心技术》</a></p>
+</li>
+<li>
+<p data-line="446"><a href="http://mp.weixin.qq.com/s/TyxsF0OeXbDyEaefeYF4FQ">熔断器 Hystrix 源码解析 —— 命令合并执行</a></p>
+</li>
+</ul>
+</body>
+              </html>
